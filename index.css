@@ -20,14 +20,14 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 0;
   display: flex;
-  min-height: 13vh;
   min-width: 100%;
   align-items: center;
   justify-content: start;
   z-index: 10;
-  padding: 2px;
+  padding: 10px;
 }
 .nav-menu {
   display: flex;
@@ -142,7 +142,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  top: 160px;
+  top: 50px;
   height: 100vh;
   padding: 0 30px;
   min-width: 100%;
