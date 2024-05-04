@@ -142,7 +142,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  top: 50px;
+  top: 30px;
   height: 100vh;
   padding: 0 30px;
   min-width: 100%;
@@ -184,6 +184,11 @@ body {
   border-radius: 8px;
   cursor: pointer;
   position: relative;
+}
+
+.Download-button a {
+  color: var(--color2);
+  text-decoration: none;
 }
 
 .Download-button svg {
@@ -597,14 +602,11 @@ body {
     font-size: 1.5rem;
   }
 
-  .Home {
-    padding: 150px;
-  }
   .safe {
-    font-size: 1.9rem;
+    font-size: 60px;
   }
   .venture {
-    font-size: 1.5rem;
+    font-size: 25px;
   }
 
   .icons i {
@@ -646,12 +648,12 @@ body {
   .nav-menu {
     display: flex;
     position: relative;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
     background-color: transparent;
     flex-direction: row;
-    height: 0;
-    width: 0;
+    height: 50px;
+    width: 100%;
     left: 0;
     z-index: 10;
     text-align: center;
@@ -665,11 +667,10 @@ body {
     justify-content: start;
     position: relative;
     top: 0;
-    left: 0;
   }
   .nav-link {
     transition: 1.3s ease-in-out;
-    font-size: 1.2rem;
+    font-size: 25px;
   }
 
   .nav-link:hover {
@@ -690,45 +691,162 @@ body {
   }
 
   .Home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
   }
 
-  .systemm {
-    justify-self: end;
+  .safe {
+    font-size: 9rem;
+  }
+
+  .venture {
+    font-size: 40px;
+  }
+
+  .Home img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .Download-button {
+    font-size: 35px;
+    padding: 12px 20px;
+    color: white;
+    background: rgb(103, 92, 156);
+  }
+
+  .Download-button svg {
+    margin-right: 20px;
+    width: 50px;
+    height: 70px;
   }
 
   .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .sysview {
-    margin-top: 0;
-  }
-
-  .safe {
-    font-size: 2.5rem;
-  }
-
-  .venture {
-    font-size: 1.5rem;
+    gap: 30px;
   }
 
   .context {
     background-color: transparent;
-    padding: 50px;
+  }
+
+  .context h1 {
+    font-size: 50px;
+  }
+
+  .feautre-text {
+    display: block;
+    color: var(--color3);
+    font-size: 30px;
+  }
+
+  .features {
+    padding: 0 100px;
+  }
+
+  .icons i {
+    font-size: 40px;
+  }
+
+  .features h1 {
+    color: var(--color3);
+    font-size: 50px;
+  }
+
+  .featuress {
+    font-size: 30px;
+  }
+
+  .System {
+    padding: 0 100px;
+  }
+
+  .context1 {
+    background-color: transparent;
+  }
+
+  .context1 h1 {
+    color: var(--color3);
+    font-size: 50px;
+  }
+
+  .minimum h1 {
+    font-size: 50px;
+  }
+
+  .requirements {
+    font-size: 30px;
+  }
+
+  .permissions h1 {
+    font-size: 50px;
+  }
+
+  .Manual {
+    padding: 0 100px;
+  }
+
+  .context2 {
+    background-color: transparent;
+  }
+
+  .context2 h1 {
+    font-size: 50px;
+  }
+
+  .context2-manual h1,
+  p {
+    font-size: 30px;
+  }
+
+  .notice {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background: var(--color4);
+    border-radius: 8px;
+  }
+
+  .notice_icon {
+    width: 25px;
+    height: 25px;
+    transform: translateY(-2px);
+    margin-right: 8px;
+  }
+
+  .notice_icon path {
+    fill: var(--color2);
+  }
+
+  .notice_title {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--color2);
+  }
+
+  .headd {
+    color: var(--color3);
+    font-size: 2.5rem;
+  }
+
+  .section-tittle {
+    font-size: 50px;
+  }
+
+  .section-text {
+    font-size: 30px;
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: min-content;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    padding: 20px;
   }
 
   .grid2 {
@@ -740,66 +858,120 @@ body {
     top: 50px;
   }
 
-  .features {
-    top: 70vh;
+  .catcher-tab-list {
+    font-size: 30px;
   }
 
-  .icons i {
-    font-size: 2.5rem;
-  }
-  .featuress {
-    font-size: 1.2rem;
-  }
-
-  .features h1 {
-    color: var(--color3);
-    font-size: 2.5rem;
-  }
-
-  .feautre-text {
-    display: block;
-    color: var(--color3);
-    font-size: 1.5rem;
-  }
-
-  .System {
-    top: 120vh;
-  }
-
-  .context1 {
-    background-color: transparent;
-    padding: 50px;
-  }
-
-  .req {
-    color: var(--color3);
-    font-size: 2.5rem;
-  }
-
-  .Minimum h1 {
-    font-size: 1.5rem;
+  .tooltip-container {
+    --background: #fefbff;
+    --inner-shadow: #9faef9;
+    --inner-outline: #34217d;
+    --inner-outline-bottom: #fafcfe;
+    --inner-outline-middle: #8880d5;
+    --inner-outline-outer-top: #fefcff;
+    --inner-outline-outer-bottom-1: #29107b;
+    --inner-outline-outer-bottom-2: #5b42c4;
+    --inner-outline-outer-bottom-3: #200265;
+    --line-1: #8676c9;
+    --line-2: #5c69ca;
+    position: relative;
+    background: var(--background);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 0.7em 1.8em;
+    border-radius: 5px;
+    margin: 10px auto;
+    height: 40px;
+    width: 40%;
+    box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),
+      0px 2px 0px 0px var(--inner-outline-bottom),
+      0px -2px 0px 0px var(--inner-outline),
+      -2px -2px 0px 0px var(--inner-outline),
+      2px -2px 0px 0px var(--inner-outline),
+      0px 0px 0px 6px var(--inner-outline-middle),
+      0px -2px 0px 7px var(--inner-outline-outer-top),
+      0px 4px 0px 7px var(--inner-outline-outer-bottom-1);
   }
 
-  .requirements {
-    font-size: 1.2rem;
+  .tooltip-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.5em;
   }
 
-  .context2 {
-    background-color: transparent;
-    padding: 50px;
+  .tooltip-icon path {
+    stroke-width: 2px;
+    stroke: var(--inner-outline);
+    stroke-linejoin: round;
   }
 
-  .headd {
-    color: var(--color3);
-    font-size: 2.5rem;
+  .tooltip-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
   }
 
-  .section-tittle {
-    font-size: 1.5rem;
+  .tooltip-line-1 {
+    height: 0.2em;
+    width: 4em;
+    border-radius: 10em;
+    display: inline-block;
+    background: var(--line-1);
   }
 
-  .section-text {
-    font-size: 1.2rem;
+  .tooltip-line-2 {
+    height: 0.2em;
+    width: 3em;
+    border-radius: 10em;
+    display: inline-block;
+    background: var(--line-2);
+  }
+
+  .tooltip {
+    position: absolute;
+    display: flex;
+    gap: 0.4em;
+    align-items: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.6em 0.8em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 0.7em;
+
+    box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),
+      0px 2px 0px 0px var(--inner-outline-bottom),
+      0px -2px 0px 0px var(--inner-outline),
+      -2px -2px 0px 0px var(--inner-outline),
+      2px -2px 0px 0px var(--inner-outline),
+      0px 0px 0px 6px var(--inner-outline-middle),
+      0px -2px 0px 7px var(--inner-outline-outer-top),
+      0px 4px 0px 7px var(--inner-outline-outer-bottom-1),
+      0px 7px 0px 7px var(--inner-outline-outer-bottom-2),
+      0px 10px 0px 7px var(--inner-outline-outer-bottom-3);
+  }
+
+  .tooltip::before {
+    content: "";
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) translateY(2px) rotate(45deg);
+    background: var(--background);
+    border-radius: 0.2em;
+  }
+
+  .tooltip-container:hover .tooltip {
+    top: -4.5em;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 
